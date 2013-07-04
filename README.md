@@ -1,4 +1,4 @@
-https://azproduction.ru/talk-promises
+http://azproduction.ru/talk-promises
 
 ```
 $ git submodule init
