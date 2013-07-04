@@ -238,3 +238,7 @@ button.run.pressin:active {
 .slide.first h2 {
     background: none;
 }
+
+.slide .garmoshka .bellows {
+    z-index: 0;
+}
