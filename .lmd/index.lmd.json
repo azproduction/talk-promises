@@ -1,0 +1,20 @@
+{
+    "name": "index build",
+    "root": "../js",
+    "output": "../index.lmd.js",
+    "modules": {
+        "shower": {
+            "path": "shower/shower.js",
+            "exports": "shower"
+        },
+        "*Example": "examples/*.js",
+        "*": "*.js",
+
+        "ymaps": "@ymaps"
+    },
+    "main": "index",
+    "optimize": true,
+    "ie": false,
+    "match": true,
+    "shortcuts": true
+}

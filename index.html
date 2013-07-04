@@ -1,0 +1,732 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title>Promise &mdash; это не больно!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="styles/print.css" media="print">
+
+    <link rel="stylesheet" href="garmoshka/stylesheets/garmoshka.css">
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/7.3/styles/idea.min.css">
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Promise &mdash; это не больно!</h1>
+		<p><a href="http://twitter.com/azproduction">Михаил Давыдов</a></p>
+	</header>
+
+	<section class="slide null">
+		<img src="images/yandex.svg" class="yandex"/>
+	</section>
+
+    <section class="slide first">
+    	<img src="images/yandex.svg" class="yandex"/>
+		<h2>Promise &mdash; это&nbsp;не больно!</h2>
+        <div class="info">
+            <p class="author">Михаил Давыдов, JavaScript-разработчик</p>
+            <p class="author">2013 год, FrontTalks</p>
+        </div>
+	</section>
+
+    <section class="slide cover h w c">
+		<h2>Асинхронность везде!</h2>
+        <img src="pictures/everywhere.jpg" alt="">
+	</section>
+
+	<section class="slide">
+        <div class="sandbox sandbox_type_fullscreen"></div>
+        <h2>Запросы к серверу</h2>
+	</section>
+
+    <section class="slide">
+       <div class="sandbox sandbox_type_fullscreen"></div>
+       <h2>Данные пользователя</h2>
+   	</section>
+
+    <section class="slide">
+        <div class="sandbox sandbox_type_fullscreen garmoshka" id="garmoshka">
+            <!-- Геннадий Васильев - шуйская гармонь (хромка in-B), черепашка in-B и ногофон -->
+            <!-- «На ярмарке» -->
+            <audio src="garmoshka/audio/a6ce8991ce50.ogg" loop preload="auto"></audio>
+
+            <div class="melody">
+                <div class="panel">
+                    <div class="sign">∞</div>
+                </div>
+                <div class="buttons">
+                    <div class="line-1">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="line-2">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bellows">
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+                <div class="slice">
+                    <div class="l"></div>
+                    <div class="r"></div>
+                </div>
+            </div>
+
+            <div class="chords">
+                <div class="panel"><h1>GARMOSHKA</h1></div>
+                <div class="buttons">
+                    <div class="line-1">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="line-2">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                    <div class="line-3">
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>События интерфейса</h2>
+   	</section>
+
+    <section class="slide">
+       <div class="sandbox sandbox_type_fullscreen">
+           <div class="ball"></div>
+       </div>
+
+       <h2>Таймеры и анимация</h2>
+   	</section>
+
+    <section class="slide cover h w">
+        <img src="pictures/medved-2.jpg" alt="Callback!">
+	</section>
+
+    <section class="slide shout">
+   		<h2>Когда один callback &mdash; всё здорово!</h2>
+   	</section>
+
+    <section class="slide">
+   		<h2>Последовательные запросы</h2>
+<pre class="l-7 javascript">
+    <code>login('user:pass@server', function (err, server) {</code>
+    <code>    if (err) return cb(err);</code>
+    <code>    server.open('db', function (err, db) {</code>
+    <code>        if (err) return cb(err);</code>
+    <code>        db.query(query, function (err, view) {});</code>
+    <code>    });</code>
+    <code>});</code>
+</pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Параллельные запросы</h2>
+<pre class="l-7 javascript">
+    <code>var rows = [], total = view.length;</code>
+    <code>function fetch(err, row) {</code>
+    <code>    if (err) return <span class="next">cb(err);</span></code>
+    <code>    if (rows.length === total) <span class="next">cb(null, rows);</span></code>
+    <code>}</code>
+    <code>for (var i = 0; i < total; i++) {</code>
+    <code>    view.get(i, fetch);</code>
+    <code>}</code>
+</pre>
+   	</section>
+
+    <section class="slide">
+        <img src="pictures/noise.png" alt="" class="place t l">
+   		<h2>Шум</h2>
+<pre class="l-7 relative javascript">
+    <code>login('user:pass@server', function (<mark>err</mark>, server) {</code>
+    <code>    <mark>if (err) return cb(err);</mark></code>
+    <code>    server.open('db', function (err, db) {</code>
+    <code>        <mark>if (err) return cb(err);</mark></code>
+    <code>        db.query(query, function (<mark>err</mark>, view) {});</code>
+    <code>    });</code>
+    <code>});</code>
+</pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Шум</h2>
+   		<ul>
+   			<li>Статус ошибки</li>
+   			<li>Однообразная обработка ошибки</li>
+   			<li>Глубина вложенности</li>
+   		</ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Сложно отменить действие</h2>
+        <pre class="l-7 javascript">
+            <code>db.query(query, function (err, view) {});</code>
+        </pre>
+        <p class="note">Как отменить или игнорировать запрос в этом случае?</p>
+        <pre class="l-8 next javascript">
+            <code>db.query(query, fn).abort(); // .cancel() ?</code>
+            <code>db.query(query, function (err) {</code>
+            <code>    if (err.message === 'abort') return;</code>
+            <code>});</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Несколько обработчиков</h2>
+        <pre class="l-7 javascript">
+            <code>query(query1, function (err, view) {});</code>
+            <code>query(query2, function (err, view) {});</code>
+            <code>query(query3, function (err, view) {});</code>
+        </pre>
+        <p class="note">3 запроса &mdash; 3 попытки логина. Для кэша нужно еще дописать код.</p>
+   	</section>
+
+    <section class="slide">
+   		<h2>Делегирование результата</h2>
+        <pre class="l-8 javascript">
+            <code>function uberQueryGenerator(data) {</code>
+            <code>    // Готовим queryFromData</code>
+            <code>    return query(queryFromData);</code>
+            <code>}</code>
+        </pre>
+        <pre class="l-8 javascript">
+            <code>function uberQueryGenerator(data, <mark>fn</mark>) {</code>
+            <code>    query(queryFromData, <mark>fn</mark>);</code>
+            <code>}</code>
+        </pre>
+   	</section>
+
+    <section class="slide shout">
+   		<h2>У callback-ов нет единого интерфейса</h2>
+   	</section>
+
+    <section class="slide">
+   		<h2>Нет единого интерфейса</h2>
+        <ul>
+            <li>Последний аргумент</li>
+            <li>Свойство конфига или метод
+                <ul>
+                    <li>success</li>
+                    <li>complete</li>
+                    <li>done</li>
+                    <li>finish</li>
+                    <li>???</li>
+                </ul>
+            </li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Нет единого интерфейса</h2>
+        <pre class="l-7 javascript">
+            <code>$('div').animate({}, function () {});</code>
+            <code>// А можно еще вот так</code>
+            <code>$('div').animate({}, {</code>
+            <code>    complete: function () {}</code>
+            <code>});</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Нет единого интерфейса</h2>
+        <pre class="l-7 javascript">
+            <code>$.ajax({</code>
+            <code>    url: url</code>
+            <code>    success: function () {}</code>
+            <code>});</code>
+
+            <code>$.ajax({</code>
+            <code>    url: url</code>
+            <code>}).done(function () {});</code>
+        </pre>
+   	</section>
+
+    <section class="slide cover w c">
+		<h2>Магия</h2>
+        <img src="pictures/spongebob.jpg" alt="">
+	</section>
+
+    <section class="slide">
+   		<h2>Магия</h2>
+        <ul>
+            <li>Step.js</li>
+            <li>Streamline.js</li>
+            <li>Fibers</li>
+            <li>???</li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Step.js</h2>
+        <pre class="l-7 javascript">
+            <code>Step(function login() {</code>
+            <code>    login('user:pass@server', this);</code>
+            <code>}, function openDatabase(<mark>err</mark>, db) {</code>
+            <code>    <mark>if (err) throw err;</mark></code>
+            <code>    db.query(query, this);</code>
+            <code>});</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Streamline.js</h2>
+        <pre class="l-7 javascript">
+            <code>var db = login('user:pass@server', _);</code>
+            <code>db.query(query, _);</code>
+        </pre>
+        <p class="note">Вроде бы ничего!</p>
+   	</section>
+
+    <section class="slide">
+   		<h2>Streamline.js</h2>
+        <img src="pictures/facepalm.jpg" alt="" class="next place b r">
+        <pre class="l-7 relative javascript">
+            <code>(fstreamline__.create(function(_) {</code>
+            <code>var db = (yield fstreamline__</code>
+            <code>.invoke(null, login, ['user:pass@server', _], 1));</code>
+            <code>(yield fstreamline__.invoke(db, "query", [query, _], 1));</code>
+            <code>;yield;}, 0).call(this, function(err) {</code>
+            <code>    if (err) throw err;</code>
+            <code>}));</code>
+        </pre>
+   	</section>
+
+    <section class="slide cover w c">
+        <img src="pictures/then.png" alt="">
+	</section>
+
+    <section class="slide">
+   		<h2>Promise</h2>
+        <ul>
+            <li>aka Futures</li>
+            <li>Распостранен в других языках</li>
+            <li>Стандартизирован <a href="http://promisesaplus.com/">Promise/A+</a></li>
+            <li>Стандарт «Покрыт тестами» <a href="https://github.com/promises-aplus/promises-tests">Promises/A+ Compliance Test Suite</a></li>
+            <li>Готовые абстракции над fs, http, ...</li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Promise</h2>
+        <pre class="l-7 javascript">
+            <code>login('user:pass@server')</code>
+            <code>.then(function (server) {</code>
+            <code>    return server.open('db');</code>
+            <code>})</code>
+            <code>.then(function (db) {</code>
+            <code>    return db.query(query);</code>
+            <code>})</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Promise</h2>
+        <pre class="l-7 javascript">
+            <code>.then(function (view) {</code>
+            <code>    return fetchRows(view);</code>
+            <code>}, function handleError(err) {</code>
+            <code>    console.error(err);</code>
+            <code>}) // ...</code>
+        </pre>
+        <p class="note">Меньше шума, обработка ошибок в одном месте</p>
+   	</section>
+
+    <section class="slide">
+   		<h2>Абстракция над обещанными данными</h2>
+        <ul>
+            <li>Обещание можно сдержать, а можно не выполнять</li>
+            <li>Состояние изменяется только 1 раз</li>
+            <li>Результат сохраняется</li>
+            <li>Цепочка обещаний</li>
+            <li>Можно пообещать нескольким</li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Реализация Promise</h2>
+        <pre class="l-7 javascript">
+            <code>var Promise = function () {</code>
+            <code>	this._value = null;</code>
+            <code>	this.isFulfilled = false; // ok</code>
+            <code>	this.isRejected = false;  // fail</code>
+            <code>	this.isResolved = false;  // ok || fail</code>
+            <code>	// ...</code>
+            <code>};</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Реализация Promise</h2>
+        <pre class="l-7 javascript">
+            <code>Promise.prototype = {</code>
+            <code>    // @return {Promise}</code>
+            <code>    then: function (onFulfilled, onRejected) {},</code>
+            <code>    fulfill: function (data) {},</code>
+            <code>    reject: function (error) {}</code>
+            <code>};</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Использование Promise</h2>
+        <pre class="l-7 javascript">
+            <code>// @param {Number} time</code>
+            <code>// @return {Promise}</code>
+            <code>function timeout(time) {</code>
+            <code>    var promise = new Promise();</code>
+            <code>    setTimeout(<mark>promise.fulfill</mark>, time);</code>
+            <code>    return promise;</code>
+            <code>}</code>
+        </pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Пример timeout</h2>
+        <pre class="l-7 javascript">
+            <code>timeout(1000)</code>
+            <code>.then(function () {</code>
+            <code>    console.log('first');</code>
+            <code>    <mark>return timeout(1000);</mark></code>
+            <code>})</code>
+            <code>.then(console.log.bind(console, 'second!'));</code>
+        </pre>
+        <button class="run">Run</button>
+        <pre class="console"></pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Пример timeout</h2>
+        <pre class="l-7 javascript">
+            <code>timeout(1000)</code>
+            <code>.then(randomLog)</code>
+            <code>.then(console.log.bind(console, 'done!'));</code>
+            <code>function randomLog() {</code>
+            <code>    var rnd = Math.random();</code>
+            <code>    console.log(rnd);</code>
+            <code>    <mark>if (rnd < 0.5) return timeout(2000);</mark></code>
+            <code>}</code>
+        </pre>
+        <button class="run">Run</button>
+        <pre class="console"></pre>
+   	</section>
+
+    <section class="slide">
+   		<h2>Promise</h2>
+        <ul>
+            <li>Не хак и не магия</li>
+            <li>Единый интерфейс всех промисов</li>
+            <li>Меньше шума в коде</li>
+            <li>Разделение логики на шаги</li>
+            <li>...</li>
+            <li>PROFIT!</li>
+        </ul>
+   	</section>
+
+    <section class="slide cover h">
+        <h2>Трюки с Promise</h2>
+        <img src="pictures/stunt.jpg" alt="">
+	</section>
+
+    <section class="slide">
+        <h2>Склеивание Promise</h2>
+        <pre class="l-7 javascript">
+            <code>// $.when - агрегатор Promise</code>
+            <code>// Результат не раньше, чем через 1с</code>
+            <code><mark>$.when</mark>($.get('/'), $.get('/?'), timeout(1000))</code>
+            <code>.then(function (res) {</code>
+            <code>    console.log(res[0].length + res[1].length);</code>
+            <code>});</code>
+        </pre>
+        <button class="run">Run</button>
+        <pre class="console"></pre>
+	</section>
+
+    <section class="slide">
+        <h2>Повтор Promise</h2>
+        <pre class="l-7 javascript">
+            <code><mark>new Attempt</mark>(get404, repeat3Times)</code>
+            <code>    .then(ok, epicFail, progress);</code>
+            <code>function get404() {</code>
+            <code>    return $.get('/404');</code>
+            <code>}</code>
+            <code>function repeat3Times(err, num) {</code>
+            <code>    if (num < 4) return 1000;</code>
+            <code>}</code>
+        </pre>
+        <button class="run">Run</button>
+        <pre class="console"></pre>
+	</section>
+
+    <section class="slide">
+        <h2>Прозрачный кэш с Promise</h2>
+        <pre class="l-7 javascript">
+            <code>var cache;</code>
+            <code>function request() {</code>
+            <code>    <mark>return cache ? cache : cache = $.get('/');</mark></code>
+            <code>}</code>
+            <code>request().then(function (html) {</code>
+            <code>    console.log(html.length);</code>
+            <code>});</code>
+        </pre>
+        <button class="run">Run</button>
+        <pre class="console"></pre>
+	</section>
+
+    <section class="slide">
+   		<h2>Promise уже рядом!</h2>
+        <ul>
+            <li>Браузер
+                <ul>
+                    <li><a href="http://api.jquery.com/category/deferred-object/">$.Deferred</a></li>
+                    <li><a href="http://api.jquery.com/jQuery.when/">$.when</a>, <a href="http://api.jquery.com/jQuery.ajax/">$.ajax</a>, $.get, $.post, ...</li>
+                </ul>
+            </li>
+            <li>Node.js
+                <ul>
+                    <li><a href="https://github.com/kriskowal/q">Q</a>:
+                        <a href="https://github.com/kriskowal/q-io">q-io</a>
+                    </li>
+                    <li><a href="https://github.com/dfilatov/jspromise">Vow</a>:
+                        <a href="https://github.com/dfilatov/vow-fs">vow-fs</a>,
+                        <a href="https://github.com/nodules/vow-asker">vow-asker</a>
+                    </li>
+                </ul>
+            </li>
+            <li>DOM Promises! <a href="http://dom.spec.whatwg.org/#promises">WHATWG Promise Spec</a></li>
+        </ul>
+   	</section>
+
+    <section class="slide cover c">
+        <img src="pictures/yield.jpg" alt="">
+	</section>
+
+    <section class="slide">
+   		<h2>Generators</h2>
+        <ul>
+            <li>Решение проблем асинхронности будущего</li>
+            <li class="next">Оператор <code>yield</code> «Ставит выполнение кода на паузу»</li>
+            <li class="next">Когда?
+                <ul>
+                    <li>Node.js 0.11.x c <code>--harmony-generators</code></li>
+                    <li>Браузеры на V8 3.19 c <code>--harmony-generators</code></li>
+                    <li>Firefox 2+ (старый синтаксис)</li>
+                </ul>
+            </li>
+            <li class="next">Можно транслировать в ES5, но лучше это не делать...</li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+        <h2>Generators</h2>
+        <pre class="l-7 javascript">
+            <code>var co = require('co');</code>
+            <code>co(function <mark>*</mark>() {</code>
+            <code>    var server = <mark>yield</mark> login('user:pass@server'),</code>
+            <code>        db = <mark>yield</mark> server.open('db'),</code>
+            <code>        view = <mark>yield</mark> db.query(query);</code>
+            <code>});</code>
+        </pre>
+        <p class="note">Скоро на экранах ваших IDE</p>
+	</section>
+
+    <section class="slide cover c">
+        <h2>yield vs then?</h2>
+        <img src="pictures/fight.jpg" alt="">
+	</section>
+
+    <section class="slide">
+   		<h2>Generators и Promise</h2>
+        <ul>
+            <li>Именно «и», а не «VS»</li>
+            <li>Используем вместе
+                <ul>
+                    <li>Библиотека <a href="https://github.com/kriskowal/q">Q</a></li>
+                    <li>Библиотека <a href="https://github.com/visionmedia/co">co</a></li>
+                </ul>
+            </li>
+            <li>С Generators код еще чище!</li>
+            <li>Обработка ошибок с try/catch!</li>
+        </ul>
+   	</section>
+
+    <section class="slide">
+   		<h2>Используйте Promise!</h2>
+        <ul>
+            <li>Готов к использованию сегодня!</li>
+            <li>Единый интерфейс</li>
+            <li>Стандарт Promise/A+</li>
+            <li>Структурирует код</li>
+            <li>Меньше шума в коде</li>
+            <li>Куча библиотек: Vow, Q, jQuery</li>
+        </ul>
+   	</section>
+
+    <section class="slide cover c">
+        <img src="pictures/boss-fight-2.jpg" alt="">
+	</section>
+
+    <section class="slide cover c">
+        <img src="pictures/boss-fight.jpg" alt="">
+	</section>
+
+    <div class="slide last">
+        <img src="images/yandex.svg" class="yandex"/>
+        <h2>Promise &mdash; это не больно!</h2>
+        <div class="info">
+            <p class="author">Михаил Давыдов</p>
+            <p class="author">JavaScript-разработчик</p>
+            <p class="author social">
+                <a href="http://habrahabr.ru/users/azproduction"><img src="pictures/js.svg" alt=""/></a><a href="http://github.com/azproduction"><img src="pictures/github.svg" alt=""/></a><a href="http://twitter.com/azproduction"><img src="pictures/twitter.svg" alt=""/></a><a href="http://twitter.com/azproduction">@azproduction</a>
+            </p>
+        </div>
+    </div>
+
+    <section class="slide">
+   		<h2>Почитать</h2>
+        <ul>
+            <li><a href="https://github.com/azproduction/talk-promises/tree/master/js/examples">Примеры с презентации</a></li>
+            <li><a href="http://promisesaplus.com/">Promises/A+</a></li>
+            <li><a href="http://promisesaplus.com/differences-from-promises-a">Differences from Promises/A</a></li>
+            <li><a href="https://github.com/kriskowal/q/blob/master/design/README.js">Design of Q library</a> (настоятельно рекомендую)</li>
+            <li><a href="http://habrahabr.ru/post/122620/">Iterators & Generators</a></li>
+            <li><a href="http://jlongster.com/A-Study-on-Solving-Callbacks-with-JavaScript-Generators">A Study on Solving Callbacks with JavaScript Generators</a></li>
+            <li><a href="http://jlongster.com/A-Closer-Look-at-Generators-Without-Promises">A Closer Look at Generators Without Promises</a></li>
+        </ul>
+   	</section>
+
+    <section class="slide cover c qr-code">
+        <a href="http://clck.ru/8i9pr">clck.ru/8i9pr</a>
+        <img src="pictures/qr-talk-promises.gif" alt="">
+   	</section>
+
+	<div class="progress"><div></div></div>
+
+    <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0.30/?coordorder=longlat&load=package.standard&lang=ru"></script>
+    <script src="index.lmd.js"></script>
+
+    <script src="garmoshka/javascripts/jTweener-0.2.js"></script>
+    <script src="garmoshka/javascripts/garmoshka.js"></script>
+</body>
+</html>

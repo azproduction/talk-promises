@@ -1,0 +1,240 @@
+.run-example {
+    font-size: 200%;
+}
+
+.sandbox_type_fullscreen {
+    border: 0 none;
+    height: 100%;
+    left: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #000;
+    position: relative;
+}
+
+section.slide h2 {
+    background: rgba(255,255,255,.7);
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 0 0 0 -40px;
+}
+
+section.slide.cover h2 {
+    margin-bottom: 37px;
+}
+
+.slide.cover h2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.slide pre.l-10 code {
+    font-size: 70%;
+}
+
+.slide pre.l-9 code {
+    font-size: 75%;
+}
+
+.slide pre.l-8 code {
+    font-size: 90%;
+    line-height: 190%;
+}
+
+.slide pre code.active,
+.slide pre code span.active {
+    margin:0;
+    background:#C00;
+    color:#FFF;
+    font-weight:normal;
+}
+
+.slide pre code span.active {
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: -5px;
+}
+
+.slide pre.relative {
+    position: relative;
+}
+
+.full .slide pre.next,
+.full .slide img.next {
+	opacity:0;
+	}
+.full .slide pre.next.active,
+.full .slide img.next.active {
+	opacity:1;
+	-webkit-transition:opacity 0.5s linear;
+	-moz-transition:opacity 0.5s linear;
+	-ms-transition:opacity 0.5s linear;
+	-o-transition:opacity 0.5s linear;
+	transition:opacity 0.5s linear;
+	}
+
+.slide pre.console {
+   	-webkit-border-radius:0;
+   	-moz-border-radius:0;
+    border-radius:0;
+   	color:#fff;
+   	-webkit-tab-size:4;
+   	-moz-tab-size:4;
+   	-o-tab-size:4;
+   	tab-size:4;
+   	line-height:1;
+   	font-family: 'PT Mono', monospace;
+
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    padding: 30px 0 0 30px;
+
+    font-size: 120%;
+
+    background: rgba(0,0,0,.8);
+}
+
+.slide pre.console code::before {
+    content: '';
+}
+
+.slide pre.console code {
+    color:#fff;
+}
+
+button.run {
+    font-size: 100%;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    padding: 5px 20px;
+}
+
+button.run  {
+    color: #4A4A4A;
+    text-shadow: 0 1px 0 white;
+    background-color: #F1F1F1;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #E0E0E0, #F6F6F6);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F6F6F6), to(#E0E0E0));
+    border: 1px solid #B2B2B2;
+    border-top: 1px solid #C9C9C9;
+    border-bottom: 1px solid #8F8F8F;
+    -webkit-box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+}
+button.run:after {
+    background-image: -moz-linear-gradient(100% 100% 90deg, #8F8F8F, #C9C9C9);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C9C9C9), to(#8F8F8F));
+}
+button.run:before {
+    background-image: -moz-linear-gradient(100% 100% 90deg, #8F8F8F, #C9C9C9);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C9C9C9), to(#8F8F8F));
+}
+button.run:hover {
+    -webkit-box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 9px rgba(0,0,0,0.3), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 9px rgba(0,0,0,0.3), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 1px 0 #C0C0C0, 0 2px 0 #BFBFBF, 0 3px 0 #BBBBBB, 0 4px 0 #B0B0B0, 0 5px 9px rgba(0,0,0,0.3), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    color: black;
+}
+button.run:active {
+    -webkit-box-shadow: 0 1px 0 #BBBBBB, 0 2px 0 #B0B0B0, 0 3px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 1px 0 #BBBBBB, 0 2px 0 #B0B0B0, 0 3px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 1px 0 #BBBBBB, 0 2px 0 #B0B0B0, 0 3px 5px rgba(0,0,0,0.25), inset 0 0 2px 1px rgba(255,255,255,0.9);
+}
+button.run.pressin:active {
+    background-image: -moz-linear-gradient(100% 100% 90deg, #F6F6F6, #E0E0E0);
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E0E0E0), to(#F6F6F6));
+}
+
+.slide.last h2 {
+    bottom: 50px;
+    position: absolute;
+}
+
+.slide.last .info {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+}
+
+.slide.last .info .author {
+    margin: 0;
+}
+
+.full .slide.last
+{
+	z-index:1;
+}
+.full .slide.last:after
+{
+    content:'';
+}
+
+.slide.last .author.social {
+    margin-left: -118px;
+}
+
+.slide.last .author.social a {
+    border: none;
+    margin-left: 5px;
+}
+
+.slide.last .author.social a img {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.slide.qr-code {
+    text-align: center;
+}
+
+.slide.qr-code img {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+
+    height: 80%;
+}
+
+.slide.qr-code a {
+    bottom: 0;
+    position: absolute;
+    font-size: 80px;
+    border: none;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    line-height: 160%;
+    font-family: 'PT Mono', monospace;
+}
+
+.slide.first h2 {
+    background: none;
+}

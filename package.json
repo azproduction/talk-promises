@@ -1,0 +1,17 @@
+{
+    "name": "ft-promises",
+    "version": "0.0.0",
+    "private": true,
+    "description": "https://azproduction.ru/talk-promises",
+    "scripts": {
+        "start": "./node_modules/.bin/http-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.yandex-team.ru:azproduction/ft-promises.git"
+    },
+    "author": "Mikhail Davydov <azprduction@yandex-team.ru>",
+    "dependencies": {
+        "http-server": "*"
+    }
+}

@@ -1,0 +1,3 @@
+[submodule "garmoshka"]
+	path = garmoshka
+	url = git://github.com/azproduction/garmoshka.git
